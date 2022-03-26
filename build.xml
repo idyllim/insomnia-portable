@@ -28,7 +28,7 @@
 
     <echo message="Replacing in app.asar..."/>
     <assertfile file="${build.path}\${papp.folder}\app-${app.version}\resources\app\${electron.appasar.file}"/>
-    <replace file="${build.path}\${papp.folder}\app-${app.version}\resources\app\${electron.appasar.file}" failOnNoReplacements="true">
+    <replace file="${build.path}\${papp.folder}\app-${app.version}\resources\app\${electron.appasar.file}" failOnNoReplacements="false">
       <replacefilter token="${electron.appasar.search}" value="${electron.appasar.replace}"/>
     </replace>
 
